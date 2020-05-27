@@ -12,48 +12,50 @@ import {
   Col,
 } from "reactstrap";
 
-const FunctionalComponentDemo = () => {
+const FunctionalComponentDemo = function () {
   return (
     <Container className="main">
       <Row>
         <Col xs="12">
-          <h1>Functional Component</h1>
+          <h1>Functional Componenet</h1>
           <p>
-            Function componenets are the primatarily tool in React to build a
-            small, modular piece of your page.
+            Functional Componenets are the primarily tool in React to build a
+            small, modular piece of your page
           </p>
           <dl>
             <dt>Can use state</dt>
             <dd>
-              With the 'useState' hook, functional components can now both
-              render a display to the page and update the information to eb
-              shown.
+              With the 'usestate' hook, functional componenets can now both
+              render a display to the page and update the information to be
+              shown to the page
             </dd>
             <dt>No 'this' keyword</dt>
             <dd>
-              Older class components use 'this', functional components have no
-              'this' objects
+              Older class componenets use 'this' , functional components how no
+              'this' object
             </dd>
             <dt>Can use effects</dt>
             <dd>
-              With the 'useEffect' hook, functional components can perform side
-              effects with any props or state changes.
+              With the 'useEffect' hook, functional componenets can perform side
+              effects with an props or stage changes
             </dd>
-            <dt>return()</dt>
+            <dt>Retrun()</dt>
             <dd>
               Must return a single element, but this element may have nested
-              elements inside.
+              elements inside
             </dd>
           </dl>
         </Col>
       </Row>
       <hr />
-      <h1>Challenges</h1>
+      <h1>Challange</h1>
       <Row>
         <Col md="6">
           <HelloWorldFatArrow className="logo" />
         </Col>
-        <Col md="6">{/* <HelloWorld /> */}</Col>
+        <Col md="6">
+          <HelloWorld />
+        </Col>
       </Row>
     </Container>
   );
@@ -72,10 +74,10 @@ const HelloWorld = function () {
           alt="Card Cap"
         />
         <CardBody>
-          <CardTitle>Reular Ole Function</CardTitle>
+          <CardTitle>Regular Ole Function</CardTitle>
           <CardSubtitle>A JS Library</CardSubtitle>
           <CardText>
-            <pre>const HelloWorld = function() </pre>
+            <pre>const HelloWorld = function() </pre>.
           </CardText>
           <Button>Go somewhere, yo</Button>
         </CardBody>
@@ -84,25 +86,23 @@ const HelloWorld = function () {
   );
 };
 
-const HelloWorldFatArrow = () => {
-  return (
-    <div>
-      <Card>
-        <img
-          width="100%"
-          height="280px"
-          src="https://i.yting.com/vi/_pfXEv9cFGE/maxresdefault.jpg"
-          alt="Card cap"
-        />
-        <CardBody>
-          <CardTitle>Fat Arrow</CardTitle>
-          <CardSubtitle>A JS Library</CardSubtitle>
-          <CardText>
-            <pre>const HelloWorld = () => </pre>
-          </CardText>
-          <Button>Go somewhere man</Button>
-        </CardBody>
-      </Card>
-    </div>
-  );
-};
+const HelloWorldFatArrow = () => (
+  <div>
+    <Card>
+      <img
+        width="100%"
+        height="280px"
+        src="https://i.ytimg.com/vi_pfXEv9cFGE/maxresdefault.jpg"
+        alt="Card Cap"
+      />
+      <CardBody>
+        <CardTitle>Fat Arrow</CardTitle>
+        <CardSubtitle>A JS Library</CardSubtitle>
+        <CardText>
+          <pre>const HelloWorld = () => </pre>.
+        </CardText>
+        <Button>Go somewhere man</Button>
+      </CardBody>
+    </Card>
+  </div>
+);

@@ -4,6 +4,9 @@ import { Route, Link, Switch } from "react-router-dom";
 import Home from "./Home";
 import Resources from "./Resources";
 import FunctionalComponentDemo from "../concepts/FunctionalComponentDemo";
+import JSXRules from "../concepts/JSXRules";
+import State from "../concepts/State";
+import PropsDemo from "../concepts/PropsDemo";
 
 const Sidebar = () => {
   return (
@@ -18,6 +21,15 @@ const Sidebar = () => {
           </li>
           <li>
             <Link to="/Resources">Resources</Link>
+          </li>
+          <li>
+            <Link to="/JSXRules">JSX Rules</Link>
+          </li>
+          <li>
+            <Link to="/state">useState</Link>
+          </li>
+          <li>
+            <Link to="/propsdemo">Props Demo</Link>
           </li>
         </ul>
       </div>
@@ -34,6 +46,15 @@ const Sidebar = () => {
           </Route>
           <Route exact path="/functionalcomponent">
             <FunctionalComponentDemo />
+          </Route>
+          <Route exact path="/jsxrules">
+            <JSXRules />
+          </Route>
+          <Route exact path="/state">
+            <State />
+          </Route>
+          <Route exact path="/propsdemo">
+            <PropsDemo />
           </Route>
         </Switch>
       </div>
