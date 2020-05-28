@@ -7,6 +7,9 @@ import FunctionalComponentDemo from "../concepts/FunctionalComponentDemo";
 import JSXRules from "../concepts/JSXRules";
 import State from "../concepts/State";
 import PropsDemo from "../concepts/PropsDemo";
+import Hooks from "../concepts/Hooks";
+import TimePiecesApp from "../apps/timer-apps/TimePiecesApp";
+import NytApp from "../apps/nyt-app/NytApp";
 
 const Sidebar = () => {
   return (
@@ -30,6 +33,15 @@ const Sidebar = () => {
           </li>
           <li>
             <Link to="/propsdemo">Props Demo</Link>
+          </li>
+          <li>
+            <Link to="/hooks">Hooks</Link>
+          </li>
+          <li>
+            <Link to="/timer">Timers</Link>
+          </li>
+          <li>
+            <Link to="/nyt-app">NYT App</Link>
           </li>
         </ul>
       </div>
@@ -55,6 +67,15 @@ const Sidebar = () => {
           </Route>
           <Route exact path="/propsdemo">
             <PropsDemo />
+          </Route>
+          <Route exact path="/hooks">
+            <Hooks />
+          </Route>
+          <Route exact path="/timer">
+            <TimePiecesApp />
+          </Route>
+          <Route exact path="/nyt-app">
+            <NytApp />
           </Route>
         </Switch>
       </div>
